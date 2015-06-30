@@ -32,6 +32,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" type="text/css" href="TabStylesInspiration/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="TabStylesInspiration/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="TabStylesInspiration/css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="TabStylesInspiration/css/tabstyles.css" />
+      <script src="js/modernizr.custom.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -91,86 +97,26 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="programacao" style="min-height:100%;">
-        <div class="container">
-            <div class="row">
 
-              <!-- Tab -->
-              <div class="col-lg-2">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <img src="http://placehold.it/50x50" class="img-circle"/>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <img src="http://placehold.it/50x50" class="img-circle"/>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <img src="http://placehold.it/50x50" class="img-circle"/>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Tab -->
-
-              <!-- Tab -->
-                <div class="col-lg-10">
-                  <div class="row" id="dia1"  style="background-color:gray;" >
-
-                    <div class="col-lg-12">
-
-                      <div class="media">
-                        <div class="media-left">
-                          <a href="#">
-                            <img class="media-object" src="http://placehold.it/80x80" alt="...">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">Titulo</h4>
-                          Conteudo<br/>
-                          Conteudo<br/>
-                          Conteudo<br/>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                  <div class="row" id="dia1"  style="background-color:gray;" >
-                    <div class="col-lg-12">
-
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-
-                        <div class="media">
-                          <div class="media-left">
-                            <a href="#">
-                              <img class="media-object" src="http://placehold.it/80x80" alt="...">
-                            </a>
-                          </div>
-                          <div class="media-body">
-                            <h4 class="media-heading">Titulo</h4>
-                            Conteudo<br/>
-                            Conteudo<br/>
-                            Conteudo<br/>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div>
-
-
-                </div>
-              <!-- Tab -->
-
-            </div>
-        </div>
+  <section class="bg-primary" id="programacao" style="min-height:100%;">
+      <div class="tabs tabs-style-fillup">
+        <nav>
+          <ul>
+            <li><a href="#section-fillup-1" class="icon icon-home"><span>Dia 1</span></a></li>
+            <li><a href="#section-fillup-2" class="icon icon-gift"><span>Dia 2</span></a></li>
+            <li><a href="#section-fillup-3" class="icon icon-upload"><span>Dia 3</span></a></li>
+            <li><a href="#section-fillup-4" class="icon icon-coffee"><span>Completo</span></a></li>
+            <li><a href="#section-fillup-5" class="icon icon-config"><span>Mais que completo</span></a></li>
+          </ul>
+        </nav>
+        <div class="content-wrap">
+          <section id="section-fillup-1"><p>1asdfasdf</p></section>
+          <section id="section-fillup-2"><p>2</p></section>
+          <section id="section-fillup-3"><p>3</p></section>
+          <section id="section-fillup-4"><p>4</p></section>
+          <section id="section-fillup-5"><p>5</p></section>
+        </div><!-- /content -->
+      </div><!-- /tabs -->
     </section>
 
 
@@ -396,7 +342,16 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <script src="TabStylesInspiration/js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
 
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
 </body>
 
 </html>
