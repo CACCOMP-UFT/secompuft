@@ -156,16 +156,12 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
     </div>
 
       <!-- palestrantes -->
-    <div class="container">
-
-
-
+    <div class="container" id="palestrantes_content">
     </div>
     <!-- palestrantes -->
 
   </section>
   <!-- palestrantes -->
-
 
 
   <section class="bg-primary" id="organizacao">
@@ -586,7 +582,7 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
   </section>
 
   <section class="bg-primary" id="localizacao">
-    <div class="container">
+    <div class="container" id="localizacao_content">
 
     </div>
   </section>
@@ -632,9 +628,13 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
     //carrega conteudo das tabelas "cronograma" do evento
 
     $(document).ready(function(){
-
+        
+      $.get("content/map.html",function(data){
+        $("#localizacao_content").html(data);
+      });
+        
       $.get("content/palestrantes.html",function(data){
-        $("#palestrantes .container").html(data);
+        $("#palestrantes_content").html(data);
       });
 
       $.get("content/dia_1.html",function(data){
