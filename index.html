@@ -197,7 +197,7 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="patrocinadores_content">
       
     </div>
 
@@ -205,65 +205,87 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
 
   <section class="bg-primary" id="localizacao">
     <div class="container" id="localizacao_content">
-
+        
     </div>
   </section>
 
   <section id="inscricao" style="min-height:700px;">
     <div class="container" id="inscricao_content">
-
+        
     </div>
   </section>
 
   <section id="devs" style="min-height:700px;">
     <div class="container" id="devs_content">
-        <object type="text/html" data="content/devs.html"></object>
+        
     </div>
   </section>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
-
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
-
   <!-- Plugin JavaScript -->
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/jquery.fittext.js"></script>
   <script src="js/wow.min.js"></script>
-
   <!-- Custom Theme JavaScript -->
   <script src="js/creative.js"></script>
   <script src="TabStylesInspiration/js/cbpFWTabs.js"></script>
   <script>
+      
     (function(){
       [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
         new CBPFWTabs(el);
       });
 
     })();
-      
-      
-
+    
     //carrega conteudo
     $(document).ready(function(){
-        return false;
-      $.get("content/map.html",function(data){
-        $("#localizacao_content").html(data);
-      });
         
-      $.get("content/palestrantes.html",function(data){
-        $("#palestrantes_content").html(data);
-      });
-        
-        
-        //carrega conteudo das tabelas "cronograma" do evento
+            //carrega conteudo das tabelas "cronograma" do evento
       $.get("content/dia_1.html",function(data){
         $("#section-fillup-1").html(data);
       });
-
+        
+            //carrega conteudo das tabelas "cronograma" do evento
+      $.get("content/dia_2.html",function(data){
+        $("#section-fillup-2").html(data);
+      });
+        
+            //carrega conteudo das tabelas "cronograma" do evento
+      $.get("content/dia_3.html",function(data){
+        $("#section-fillup-3").html(data);
+      });
+        
+       $.get("content/palestrantes.html",function(data){
+        $("#palestrantes_content").html(data);
+      });
+        
+        $.get("content/organizacao.html",function(data){
+        $("#organizacao_content").html(data);
+      });
+        
+        $.get("content/patrocinadores.html",function(data){
+        $("#patrocinadores_content").html(data);
+      });
+        
+        $.get("content/localizacao.html",function(data){
+        $("#localizacao_content").html(data);
+      });
+        
+        $.get("content/inscricao.html",function(data){
+        $("#inscricao_content").html(data);
+      });
+        
+        $.get("content/devs.html",function(data){
+        $("#devs_content").html(data);
+      });
 
     });
+      
+      
   </script>
 </body>
 
