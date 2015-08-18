@@ -228,13 +228,7 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
 
     </div>
   </section>
-
-  <section class="bg-primary" id="devs" style="min-height:700px;">
-    <div class="container" id="devs_content">
-
-    </div>
-  </section>
-
+    
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
   <!-- Bootstrap Core JavaScript -->
@@ -272,9 +266,9 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
         $("#section-fillup-3").html(data);
       });
 
-      /*$.get("content/palestrantes.html", function(data) {
+      $.get("content/palestrantes.html", function(data) {
         $("#palestrantes_content").html(data);
-      });*/
+      });
 
       $.get("content/organizacao.html", function(data) {
         $("#organizacao_content").html(data);
@@ -291,11 +285,6 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
       $.get("content/inscricao.html", function(data) {
         $("#inscricao_content").html(data);
       });
-
-      $.get("content/devs.html", function(data) {
-        $("#devs_content").html(data);
-      });
-
     });
   </script>
 </body>
