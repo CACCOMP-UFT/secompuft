@@ -34,7 +34,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #48C3CE;
 }
 
 h1,
@@ -50,6 +50,11 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+}
+
+p:first-letter {
+  font-size: 200%;
+  font-weight: bold;
 }
 
 .bg-primary {
@@ -97,7 +102,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #48C3CE;
 }
 
 .navbar-default .nav > li>a,
@@ -161,7 +166,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #48C3CE;
     }
 
     .navbar-default.affix .nav > li>a,
