@@ -1,17 +1,326 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+  <!--
+  _|_|_|    _|_|      _|_|_|    _|_|_|    _|_|    _|      _|  _|_|_|
+_|        _|    _|  _|        _|        _|    _|  _|_|  _|_|  _|    _|
+_|        _|_|_|_|  _|        _|        _|    _|  _|  _|  _|  _|_|_|
+_|        _|    _|  _|        _|        _|    _|  _|      _|  _|
+  _|_|_|  _|    _|    _|_|_|    _|_|_|    _|_|    _|      _|  _|
+
+Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Computação UFT)
+     Gestão 2015
+     Colaboradores:
+     Desenvolvedores da página:
+            Vinícius Aires Barros | Github @viniciusaires7
+            Paulo Roberto | Github @paulorobertocruz
+     Banner da Semana Acadêmica:
+            Wandro Beckman Maciel
+     Arte GameNight
+            Iury Felipe
+     Fork-me: https://github.com/CACCOMP-UFT/secompuft-->
+
   <meta charset="utf-8">
-  <title>GameNight</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--Metatags Facebook-->
+  <meta property="og:locale" content="pt_BR">
+
+  <meta property="og:url" content="http://www.uft.edu.br/secomp2015">
+
+  <meta property="og:title" content="VIII Semana Acadêmica de Ciência da Computação">
+  <meta property="og:site_name" content="VII SECOMP UFT">
+
+  <meta property="og:description" content="A Semana Acadêmica de Ciência da Computação é um evento que ocorre com periodicidade anual, sendo promovido pelo curso de Ciência da Computação da Fundação Universidade Federal do Tocantins (UFT). Ao longo dos anos, este evento científico
+    em computação vem ganhando cada vez mais importância e respeito, agregando grande parte da comunidade regional cujo interesse em tecnologia e computação seja proveniente do meio acadêmico ou do meio empresarial e industrial. As últimas edições
+    da Semana Acadêmica realizadas anualmente no campus de Palmas da UFT foram um sucesso, contando com mais de 200 participantes. Além disso, a cooperação de todos os docentes do curso, além de profissionais do mercado de trabalho e de professores
+    de outras instituições, tornou possível a realização de um evento com qualidade e eficácia.">
+  <meta property="og:image" content="img/secomp_logo_decription.png">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="570">
+  <meta property="og:image:height" content="312">
+  <!--Metatags Facebook-->
+
+  <title>VIII SECOMP</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <meta name="theme-color" content="#48C3CE">
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+  <!-- Custom Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/gamenight.css" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-68658104-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
-<body>
-  <section>
+<body id="page-top" style="overflow-x: hidden;">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <h3>Hello World</h3>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">GameNight</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#page-top">Home</a></li>
+          <li><a class="page-scroll" href="#sobre">Sobre</a></li>
+          <li><a class="page-scroll" href="#campeonatos">Campeonatos</a></li>
+          <li><a class="page-scroll" href="#freeplay">Freeplay</a></li>
+          <li><a class="page-scroll" href="#programacao">Programação</a></li>
+          <li><a class="page-scroll" href="#localizacao">Localização</a></li>
+          <li><a class="page-scroll" href="#aovivo">Ao Vivo</a></li>
+          <li><a class="page-scroll" href="#inscricao">Inscrição</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-content" id="inicio">
+      <div class="header-content-inner">
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Sobre</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 25px;">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <img src="img/gamenight-logo.png" />
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <p style="text-align: justify;">Pela primeira vez na Semana Acadêmica do Curso de Ciência da Computação da Universidade Federal do Tocantins, teremos a Game Night, o campeonato de jogos eletrônicos, com propósito de incentivar uma maior integração entre os participantes, trazendo
+            diversão e descontração. Organizada pelo Centro Acadêmico e empresa patrocinadora, a competição acontecerá durante os três dias do evento, com início às 19 horas. A Game Night contará com espaço de freeplayer, sorteio de brindes e premiação
+            no final. Counter Strike Global Offensive, Dota 2, League Of Legends, Guitar Hero III e Mortal Kombat, são alguns dos jogos escolhidos pelos alunos para o campeonato que acontecerá nas dependências do Bloco III e no Centro Universitário Integrado de Ciência,
+            Cultura e Arte – CUICA.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <section id="campeonatos" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Campeonatos</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 25px;">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p class=" text-center" style="text-align: justify;">A Gamenight contará com a realização de campeonatos de Counter Strike Global Offensive, League of Legends, Dota II e Mortal Kombate, o evento ocorrerá durante os três dias da VIII Semana Acadêmica de Ciência da Computação das 19h às 22h. No
+            útimo dia do evento aos vencedores de cada campeonato estaremos dando prêmios e sorteios de brindes... Então não fique parado e monte sua equipe e venha nós provar o quanto você é fera!</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/gamenight-img/Csg e MT2.png" style="width: 100%; height: 100%;" />
+              </div>
+
+              <div class="item">
+                <img src="img/gamenight-img/Lol1.png" style="width: 100%; height: 100%;" />
+              </div>
+
+              <div class="item">
+                <img src="img/gamenight-img/GH1.png" style="width: 100%; height: 100%;" />
+              </div>
+
+              <div class="item">
+                <img src="img/gamenight-img/Dota.png" style="width: 100%; height: 100%;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="freeplay" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">FreePlay</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <img src="img/freeplay.png" alt="" />
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <p style="text-align: justify;">A Game Night terá espaço FreePlay com jogos diversos, aumentando ainda mais sua diversão durante o evento!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programacao" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">Programação</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <caption>*mais detalhes em breve!</caption>
+      <table class="table" style="margin-top: 25px;">
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Jogos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>03/11/2015</td>
+            <td>1ª Fase Gamenight</td>
+          </tr>
+          <tr>
+            <td>04/11/2015</td>
+            <td>2ª Fase Gamenight</td>
+          </tr>
+          <tr>
+            <td>05/11/2015</td>
+            <td>Final Gamenight</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="localizacao" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Local do Evento</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 25px;">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h3>Centro Universitário Integrado de Ciência, Cultura e Arte</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.111221394695!2d-48.361081!3d-10.177433000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDEwJzM4LjgiUyA0OMKwMjEnMzkuOSJX!5e1!3m2!1spt-BR!2sus!4v1443642614143"
+          width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aovivo" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Transmissão Ao Vivo</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 25px;">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <img src="img/caccompliveLogoOficial.png" alt="" />
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p style="text-align: justify;">O CACCOMPLive será seu canal de transmissão oficial dos campeonatos que ocorrerão na GameNight. Fique ligado que em breve teremos mais novidades!</p>
+          <span>Transmissão ao vivo através do Twitch e no Datashow do auditório bloco III.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inscricao" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Inscrições</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 25px;">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <p style="text-align: justify;">As inscrições serão intermediadas pelo Centro Acadêmico de Ciência da Computação da UFT, através de formulários vinculados ao site. A data das inscrições será definida em breve.<p>
+            <h3>Valores</h3>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Inscritos na VIII Secomp</td>
+                  <td>R$ 7,00</td>
+                </tr>
+                <tr>
+                  <td>Inscrição somente na Game Night (antecipado)</td>
+                  <td>R$ 10,00</td>
+                </tr>
+                <tr>
+                  <td>Inscrição somente na Game Night (durante o evento)</td>
+                  <td>R$ 15,00</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <img src="img/ticket-gamenight.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/creative.js"></script>
 </body>
 
 </html>
