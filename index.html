@@ -50,6 +50,7 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
   <meta name="theme-color" content="#48C3CE">
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/fakeLoader.css">
 
   <!-- Custom Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -86,6 +87,7 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
 </head>
 
 <body id="page-top" style="overflow-x: hidden;">
+  <div class="fakeloader"></div>
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -308,6 +310,16 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
   <script src="js/wow.min.js"></script>
   <!-- Custom Theme JavaScript -->
   <script src="js/creative.js"></script>
+  <script src="js/fakeLoader.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".fakeloader").fakeLoader({
+        timeToHide: 5000,
+        bgColor: "#73CCD7",
+        spinner: "spinner7"
+      });
+    });
+  </script>
   <script>
     //carrega conteudo
     $(document).ready(function() {
