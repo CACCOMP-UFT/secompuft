@@ -15,7 +15,6 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
      Colaboradores:
      Desenvolvedores da página:
             Vinícius Aires Barros | Github @viniciusaires7
-            Paulo Roberto | Github @paulorobertocruz
      Banner da Semana Acadêmica:
             Wandro Beckman Maciel
      Arte GameNight
@@ -28,13 +27,12 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--Metatags Facebook-->
   <meta property="og:locale" content="pt_BR">
 
-  <meta property="og:url" content="http://www.uft.edu.br/secomp2015">
+  <meta property="og:url" content="http://www.uft.edu.br/secomp2015/gamenight.html">
 
   <meta property="og:title" content="VIII Semana Acadêmica de Ciência da Computação">
-  <meta property="og:site_name" content="VII SECOMP UFT - GameNight">
+  <meta property="og:site_name" content="VIII SECOMP UFT - GameNight">
 
   <meta property="og:description" content="Pela primeira vez na Semana Acadêmica do Curso de Ciência da Computação da Universidade Federal do Tocantins, teremos a Game Night, o campeonato de jogos eletrônicos, com propósito de incentivar uma maior integração entre os participantes, trazendo
     diversão e descontração. Organizada pelo Centro Acadêmico e empresa patrocinadora, a competição acontecerá durante os três dias do evento, com início às 19 horas. A Game Night contará com espaço de freeplay, sorteio de brindes e premiação
@@ -46,11 +44,11 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
   <meta property="og:image:height" content="312">
   <!--Metatags Facebook-->
 
-  <title>VIII SECOMP</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <title>VIII SECOMP UFT - GameNight</title>
   <meta name="theme-color" content="#182831">
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/fakeLoader.css">
 
   <!-- Custom Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -87,6 +85,7 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
 </head>
 
 <body id="page-top" style="overflow-x: hidden;">
+  <div class="fakeloader"></div>
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -109,7 +108,7 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
           <li><a class="page-scroll" href="#localizacao" style="padding-left: 10px;padding-right: 10px;">Localização</a></li>
           <li><a class="page-scroll" href="#aovivo" style="padding-left: 10px;padding-right: 10px;">Ao Vivo</a></li>
           <li><a class="page-scroll" href="#inscricao" style="padding-left: 10px;padding-right: 10px;">Inscrição</a></li>
-          <li><a class="page-scroll" href="#organizacao" style="padding-left: 10px;padding-right: 10px;">Organização</a></li>
+          <li><a class="page-scroll" href="#patrocinio" style="padding-left: 10px;padding-right: 10px;">Patrocinadores</a></li>
         </ul>
       </div>
     </div>
@@ -153,40 +152,86 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
         </div>
       </div>
       <div class="row" style="margin-top: 25px;">
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <p class=" text-center" style="text-align: justify;">A Gamenight contará com a realização de campeonatos de Counter-Strike Global Offensive, League of Legends, Dota II, Mortal Kombat, Call of Duty Black Ops III e Fifa 16, o evento ocorrerá durante os três dias da VIII Semana Acadêmica de Ciência
-            da Computação das 19h às 22h. No útimo dia do evento aos vencedores de cada campeonato estaremos dando prêmios e sorteios de brindes... Então não fique parado e monte sua equipe e venha nos provar o quanto você é fera!
-            <br>As premiações ocorrerão no final de cada campeonato!</p>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-          <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-            </ol>
-
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="img/gamenight-img/COD_BOIII.png" style="width: 100%; height: 100%;" />
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab_a" data-toggle="tab">Compeonatos</a></li>
+          <li><a href="#tab_b" data-toggle="tab">Regras dos Campeonatos</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_a">
+            <div class="row" style="margin-top: 20px;">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h3>Sobre a GameNight</h3>
+                <p class=" text-center" style="text-align: justify;">A Gamenight contará com a realização de campeonatos de Counter-Strike Global Offensive, League of Legends, Dota II, Mortal Kombat, Call of Duty Black Ops III e Fifa 16, o evento ocorrerá durante os três dias da VIII Semana Acadêmica de
+                  Ciência da Computação das 19h às 22h. No útimo dia do evento aos vencedores de cada campeonato estaremos dando prêmios e sorteios de brindes... Então não fique parado e monte sua equipe e venha nos provar o quanto você é fera!
+                  <br>As premiações ocorrerão no final de cada campeonato!</p>
               </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                  </ol>
 
-              <div class="item">
-                <img src="img/gamenight-img/Csg e MT2.png" style="width: 100%; height: 100%;" />
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="img/gamenight-img/COD_BOIII.png" style="width: 100%; height: 100%;" />
+                    </div>
+
+                    <div class="item">
+                      <img src="img/gamenight-img/Csg e MT2.png" style="width: 100%; height: 100%;" />
+                    </div>
+
+                    <div class="item">
+                      <img src="img/gamenight-img/Lol1.png" style="width: 100%; height: 100%;" />
+                    </div>
+
+                    <div class="item">
+                      <img src="img/gamenight-img/Dota.png" style="width: 100%; height: 100%;" />
+                    </div>
+
+                    <div class="item">
+                      <img src="img/gamenight-img/fifa16.png" style="width: 100%; height: 100%;" />
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div class="item">
-                <img src="img/gamenight-img/Lol1.png" style="width: 100%; height: 100%;" />
+            </div>
+          </div>
+          <div class="tab-pane" id="tab_b">
+            <h3>Download das regras dos campeonatos</h3>
+            <div class="row">
+              <div class="col-lg-2 col-md-4 text-center">
+                <div class="service-box">
+                  <a href="#" target="_blank"><img src="img/gamenight-img/logo-cs.png" /></a>
+                </div>
               </div>
-
-              <div class="item">
-                <img src="img/gamenight-img/Dota.png" style="width: 100%; height: 100%;" />
+              <div class="col-lg-2 col-md-4 text-center">
+                <div class="service-box">
+                  <a href="#" target="_blank"><img src="img/gamenight-img/logo-dota2.png" /></a>
+                </div>
               </div>
-
-              <div class="item">
-                <img src="img/gamenight-img/fifa16.png" style="width: 100%; height: 100%;" />
+              <div class="col-lg-2 col-md-4 text-center">
+                <div class="service-box">
+                  <a href="#" target="_blank"><img src="img/gamenight-img/logo-lol.png" /></a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 text-center">
+                <div class="service-box">
+                  <a href="#" target="_blank"><img src="img/gamenight-img/logo-cod.png" /></a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 text-center">
+                <div class="service-box">
+                  <a href="#" target="_blank"><img src="img/gamenight-img/logo-fifa.png" /></a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 text-center">
+                <div class="service-box">
+                  <a href="#" target="_blank"><img src="img/gamenight-img/logo-mk.png" /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -306,20 +351,18 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
               </tr>
               <tr>
                 <td>Inscrição somente na Game Night (antecipado)</td>
-                <td>R$ 10,00</td>
-              </tr>
-              <tr>
-                <td>Inscrição somente na Game Night (durante o evento)</td>
                 <td>R$ 15,00</td>
               </tr>
             </tbody>
           </table>
           <div class="row">
+            <h4>Counter-Strike Global Offensive, League of Legends e Dota II</h4>
             <a href="https://goo.gl/g80XqX" target="_blank">
               <button type="button" class="btn btn-info" style="width: 100%;">Inscreva-se para os Campeonatos PC</button>
             </a>
           </div>
           <div class="row" style="margin-top: 20px;">
+            <h4>Mortal Kombate X, Call of Duty Black Ops III e Fifa 16</h4>
             <a href="https://goo.gl/rb3LYs" target="_blank">
               <button type="button" class="btn btn-warning" style="width: 100%;">Inscreva-se para os Campeonatos Console</button>
             </a>
@@ -332,23 +375,18 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
     </div>
   </section>
 
-  <section id="organizacao" class="bg-dark">
+  <section id="patrocinio" class="bg-dark">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Organização</h2>
+          <h2 class="section-heading">Empresa Patrocinadora</h2>
           <hr class="light">
         </div>
       </div>
       <div class="row" style="margin-top:50px;">
-        <div class="col-lg-6 col-md-12 text-center">
+        <div class="col-lg-12 col-md-12 text-center">
           <div class="service-box">
-            <a href="https://www.facebook.com/caccompuft" target="_blank"><img src="img/apoio-logo/caccomp.png"/></a>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 text-center">
-          <div class="service-box">
-            <a href="https://www.facebook.com/topdvdvideo" target="_blank"><img src="img/apoio-logo/TOPMAIS.png"/></a>
+            <a href="https://www.facebook.com/topdvdvideo" target="_blank"><img src="img/apoio-logo/TOPMAIS.png" /></a>
           </div>
         </div>
       </div>
@@ -362,6 +400,16 @@ Site desenvolvido e mantido pelo CACCOMP (Centro Acadêmico de Ciência da Compu
   <script src="js/jquery.fittext.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/creative.js"></script>
+  <script src="js/fakeLoader.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".fakeloader").fakeLoader({
+        timeToHide: 5000,
+        bgColor: "#1D3F44",
+        spinner: "spinner6"
+      });
+    });
+  </script>
 </body>
 
 </html>
